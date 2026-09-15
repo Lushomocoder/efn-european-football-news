@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EFN | European Football Network</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #07100d;
+  color: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* TOP BAR */
+.topbar {
+  background: #050806;
+  color: #9ba8a2;
+  font-size: 12px;
+  padding: 9px 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* HEADER */
+header {
+  background: #08140f;
+  border-bottom: 1px solid #1b3025;
+}
+
+.header {
+  max-width: 1200px;
+  margin: auto;
+  height: 82px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-ball {
+  width: 48px;
+  height: 48px;
+  border: 3px solid #00f26d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.logo h1 {
+  color: #00f26d;
+  font-size: 31px;
+  letter-spacing: -1px;
+}
+
+.logo p {
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: white;
+  margin-top: 2px;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #00f26d;
+}
+
+.search {
+  border: 1px solid #294135;
+  padding: 10px 13px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+/* LEAGUE NAV */
+.leagues {
+  background: #0d1c15;
+  border-bottom: 1px solid #1b3025;
+  overflow-x: auto;
+}
+
+.leagues-inner {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+}
+
+.leagues a {
+  padding: 14px 18px;
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: bold;
+  color: #bbc8c1;
+}
+
+.leagues a:hover {
+  background: #00f26d;
+  color: #06100a;
+}
+
+/* BREAKING */
+.breaking {
+  background: #00f26d;
+  color: #031008;
+  padding: 11px 5%;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.breaking span {
+  background: #07120c;
+  color: #00f26d;
+  padding: 5px 8px;
+  margin-right: 12px;
+  border-radius: 4px;
+  font-size: 10px;
+}
+
+/* MAIN */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 28px 20px 60px;
+}
+
+/* HERO */
+.hero {
+  display: grid;
+  grid-template-columns: 1.6fr 0.9fr;
+  gap: 18px;
+}
+
+.hero-main {
+  min-height: 460px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  background:
+    linear-gradient(
+      to top,
+      rgba(0,0,0,.95),
+      rgba(0,0,0,.05)
+    ),
+    url("https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1400&q=85")
+    center/cover;
+}
+
+.hero-content {
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  bottom: 28px;
+}
+
+.category {
+  color: #00f26d;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.hero h2 {
+  font-size: clamp(34px, 5vw, 58px);
+  line-height: 1;
+  margin: 10px 0;
+  max-width: 800px;
+}
+
+.hero-text {
+  color: #bbc7c1;
+  font-size: 14px;
+}
+
+/* SIDE STORIES */
+.side-stories {
+  display: grid;
+  gap: 18px;
+}
+
+.side-story {
+  min-height: 221px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.side-story:nth-child(1) {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,.9), transparent),
+    url("https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=900&q=80");
+}
+
+.side-story:nth-child(2) {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,.9), transparent),
+    url("https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=900&q=80");
+}
+
+.side-content {
+  position: absolute;
+  bottom: 18px;
+  left: 20px;
+  right: 20px;
+}
+
+.side-content h3 {
+  font-size: 22px;
+  line-height: 1.1;
+  margin-top: 7px;
+}
+
+/* SECTIONS */
+.section {
+  margin-top: 38px;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #24362d;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+}
+
+.section-title h2 {
+  font-size: 25px;
+}
+
+.more {
+  color: #00f26d;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+/* NEWS CARDS */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 17px;
+}
+
+.news-card {
+  background: #0d1814;
+  border: 1px solid #20362a;
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+.news-image {
+  height: 185px;
+  background-size: cover;
+  background-position: center;
+}
+
+.news-card:nth-child(1) .news-image {
+  background-image:
+    url("https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=900&q=80");
+}
+
+.news-card:nth-child(2) .news-image {
+  background-image:
+    url("https://images.unsplash.com/photo-1553778263-73a83bab9b0c?auto=format&fit=crop&w=900&q=80");
+}
+
+.news-card:nth-child(3) .news-image {
+  background-image:
+    url("https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?auto=format&fit=crop&w=900&q=80");
+}
+
+.news-body {
+  padding: 17px;
+}
+
+.news-body h3 {
+  font-size: 19px;
+  line-height: 1.2;
+  margin: 8px 0;
+}
+
+.meta {
+  color: #879890;
+  font-size: 11px;
+}
+
+/* LOWER AREA */
+.lower {
+  display: grid;
+  grid-template-columns: 1.4fr .8fr;
+  gap: 20px;
+}
+
+.news-list,
+.match-centre {
+  background: #0d1814;
+  border: 1px solid #20362a;
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+.news-row {
+  padding: 16px;
+  border-bottom: 1px solid #20362a;
+  display: flex;
+  gap: 15px;
+}
+
+.news-row:last-child {
+  border-bottom: none;
+}
+
+.small-image {
+  width: 135px;
+  min-width: 135px;
+  height: 90px;
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg,#183b29,#102019);
+}
+
+.news-row h3 {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.news-row p {
+  color: #899891;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* MATCHES */
+.match {
+  padding: 16px;
+  border-bottom: 1px solid #20362a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.match:last-child {
+  border-bottom: none;
+}
+
+.match small {
+  color: #84948c;
+}
+
+.match-teams {
+  text-align: right;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.match-score {
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 15px;
+}
+
+/* LEAGUE CARDS */
+.league-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 16px;
+}
+
+.league-card {
+  background: #0d1814;
+  border: 1px solid #20362a;
+  padding: 23px;
+  border-radius: 12px;
+}
+
+.league-card:hover {
+  border-color: #00f26d;
+}
+
+.league-card span {
+  color: #00f26d;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.league-card h3 {
+  margin-top: 7px;
+  font-size: 20px;
+}
+
+/* FOOTER */
+footer {
+  background: #040806;
+  border-top: 1px solid #20362a;
+  padding: 35px 20px;
+}
+
+.footer {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  color: #00f26d;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+footer p {
+  color: #829089;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+/* MOBILE */
+@media(max-width:850px) {
+  nav {
+    display: none;
+  }
+
+  .hero,
+  .lower {
+    grid-template-columns: 1fr;
+  }
+
+  .news-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .league-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width:560px) {
+  .topbar {
+    display: none;
+  }
+
+  .header {
+    height: 70px;
+  }
+
+  .logo h1 {
+    font-size: 26px;
+  }
+
+  .logo-ball {
+    width: 42px;
+    height: 42px;
+  }
+
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .hero-main {
+    min-height: 440px;
+  }
+
+  .hero-content {
+    left: 20px;
+    right: 20px;
+  }
+
+  .hero h2 {
+    font-size: 35px;
+  }
+
+  .news-grid,
+  .league-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .side-story {
+    min-height: 200px;
+  }
+
+  .news-image {
+    height: 210px;
+  }
+
+  .small-image {
+    width: 95px;
+    min-width: 95px;
+  }
+
+  .footer {
+    display: block;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+  <span>EFN • EUROPEAN FOOTBALL NETWORK</span>
+  <span>NEWS · TRANSFERS · FIXTURES · RESULTS · ANALYSIS</span>
+</div>
+
+<header>
+<div class="header">
+
+<a href="#" class="logo">
+  <div class="logo-ball">⚽</div>
+  <div>
+    <h1>EFN</h1>
+    <p>EUROPEAN FOOTBALL NETWORK</p>
+  </div>
+</a>
+
+<nav>
+  <a href="#latest">Latest</a>
+  <a href="#transfers">Transfers</a>
+  <a href="#fixtures">Fixtures</a>
+  <a href="#leagues">Leagues</a>
+  <a href="#analysis">Analysis</a>
+</nav>
+
+<div class="search">⌕</div>
+
+</div>
+</header>
+
+<div class="leagues">
+<div class="leagues-inner">
+  <a href="#">ALL</a>
+  <a href="#">PREMIER LEAGUE</a>
+  <a href="#">LA LIGA</a>
+  <a href="#">SERIE A</a>
+  <a href="#">BUNDESLIGA</a>
+  <a href="#">LIGUE 1</a>
+  <a href="#">CHAMPIONS LEAGUE</a>
+</div>
+</div>
+
+<div class="breaking">
+  <span>BREAKING</span>
+  EFN MATCH CENTRE — European football news, fixtures and results in one place.
+</div>
+
+<main class="container">
+
+<section class="hero">
+
+<article class="hero-main">
+<div class="hero-content">
+  <div class="category">EFN FEATURE</div>
+  <h2>European football. One network. Every story.</h2>
+  <p class="hero-text">
+    News, transfers, fixtures, results and analysis from across European football.
+  </p>
+</div>
+</article>
+
+<div class="side-stories">
+
+<article class="side-story">
+<div class="side-content">
+  <div class="category">TRANSFER CENTRE</div>
+  <h3>The latest moves, rumours and confirmed deals</h3>
+  <p class="meta">EFN Transfers</p>
+</div>
+</article>
+
+<article class="side-story">
+<div class="side-content">
+  <div class="category">MATCHDAY</div>
+  <h3>Fixtures, results and the stories behind the score</h3>
+  <p class="meta">EFN Match Centre</p>
+</div>
+</article>
+
+</div>
+</section>
+
+
+<section class="section" id="latest">
+
+<div class="section-title">
+<h2>Latest Football News</h2>
+<a class="more" href="#">VIEW ALL →</a>
+</div>
+
+<div class="news-grid">
+
+<article class="news-card">
+<div class="news-image"></div>
+<div class="news-body">
+<div class="category">EUROPEAN FOOTBALL</div>
+<h3>What to watch across Europe's biggest competitions</h3>
+<div class="meta">EFN Editorial</div>
+</div>
+</article>
+
+<article class="news-card">
+<div class="news-image"></div>
+<div class="news-body">
+<div class="category">ANALYSIS</div>
+<h3>The tactical trends shaping modern football</h3>
+<div class="meta">EFN Analysis</div>
+</div>
+</article>
+
+<article class="news-card">
+<div class="news-image"></div>
+<div class="news-body">
+<div class="category">CHAMPIONS LEAGUE</div>
+<h3>European nights: fixtures and stories to follow</h3>
+<div class="meta">EFN Editorial</div>
+</div>
+</article>
+
+</div>
+</section>
+
+
+<section class="section lower">
+
+<div id="transfers">
+
+<div class="section-title">
+<h2>EFN Newsroom</h2>
+<a class="more" href="#">MORE NEWS →</a>
+</div>
+
+<div class="news-list">
+
+<article class="news-row">
+<div class="small-image"></div>
+<div>
+<div class="category">TRANSFERS</div>
+<h3>Transfer Centre: moves, negotiations and market watch</h3>
+<p>Follow the developing transfer picture with EFN's football newsroom.</p>
+</div>
+</article>
+
+<article class="news-row">
+<div class="small-image"></div>
+<div>
+<div class="category">MATCHDAY</div>
+<h3>Fixtures & results: follow the European football calendar</h3>
+<p>Schedules, results and key match information in one place.</p>
+</div>
+</article>
+
+<article class="news-row">
+<div class="small-image"></div>
+<div>
+<div class="category">ANALYSIS</div>
+<h3>Inside the game: tactics, players and the bigger story</h3>
+<p>Football analysis from the EFN editorial desk.</p>
+</div>
+</article>
+
+</div>
+</div>
+
+
+<div id="fixtures">
+
+<div class="section-title">
+<h2>Match Centre</h2>
+<a class="more" href="#">FULL CENTRE →</a>
+</div>
+
+<div class="match-centre">
+
+<div class="match">
+<div><small>19:00</small></div>
+<div class="match-teams">
+<b>Home Team</b>
+<b>Away Team</b>
+</div>
+<div class="match-score">—</div>
+</div>
+
+<div class="match">
+<div><small>20:00</small></div>
+<div class="match-teams">
+<b>Home Team</b>
+<b>Away Team</b>
+</div>
+<div class="match-score">—</div>
+</div>
+
+<div class="match">
+<div><small>21:00</small></div>
+<div class="match-teams">
+<b>Home Team</b>
+<b>Away Team</b>
+</div>
+<div class="match-score">—</div>
+</div>
+
+</div>
+</div>
+
+</section>
+
+
+<section class="section" id="leagues">
+
+<div class="section-title">
+<h2>Explore EFN</h2>
+</div>
+
+<div class="league-grid">
+
+<a class="league-card" href="#">
+<span>ENGLAND</span>
+<h3>Premier League</h3>
+</a>
+
+<a class="league-card" href="#">
+<span>SPAIN</span>
+<h3>La Liga</h3>
+</a>
+
+<a class="league-card" href="#">
+<span>ITALY</span>
+<h3>Serie A</h3>
+</a>
+
+<a class="league-card" href="#">
+<span>GERMANY</span>
+<h3>Bundesliga</h3>
+</a>
+
+<a class="league-card" href="#">
+<span>FRANCE</span>
+<h3>Ligue 1</h3>
+</a>
+
+<a class="league-card" href="#">
+<span>EUROPE</span>
+<h3>Champions League</h3>
+</a>
+
+</div>
+</section>
+
+</main>
+
+<footer>
+
+<div class="footer">
+
+<div>
+<div class="footer-logo">EFN</div>
+<p>European Football Network</p>
+</div>
+
+<div>
+<p>Football News · Transfers · Fixtures · Results · Analysis</p>
+<p>© 2026 EFN. All rights reserved.</p>
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>
