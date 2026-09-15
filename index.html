@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EFN - European Football News | Breaking News, Scores & Transfers</title>
+    <meta name="description" content="EFN - Your source for European football news. Coverage of Premier League, La Liga, Serie A, Bundesliga, Ligue 1, Champions League and more.">
+    <meta name="keywords" content="European football, news, Premier League, La Liga, Serie A, Bundesliga, Ligue 1, Champions League, transfers, scores">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="45" fill="#1a472a"/>
+                            <circle cx="50" cy="50" r="40" fill="none" stroke="#00d644" stroke-width="2"/>
+                            <path d="M 30 50 L 70 50 M 50 30 L 50 70" stroke="#00d644" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span class="logo-text">EFN</span>
+                    </div>
+                    
+                    <nav class="main-nav">
+                        <ul class="nav-menu">
+                            <li><a href="#" class="nav-link active">Home</a></li>
+                            <li><a href="#" class="nav-link">Premier League</a></li>
+                            <li><a href="#" class="nav-link">La Liga</a></li>
+                            <li><a href="#" class="nav-link">Serie A</a></li>
+                            <li><a href="#" class="nav-link">Bundesliga</a></li>
+                            <li><a href="#" class="nav-link">Ligue 1</a></li>
+                            <li><a href="#" class="nav-link">Champions League</a></li>
+                            <li><a href="#" class="nav-link">Transfers</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="header-actions">
+                        <button class="search-toggle" id="searchToggle">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                        <button class="menu-toggle" id="menuToggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Breaking News Ticker -->
+        <div class="breaking-news-ticker">
+            <div class="ticker-label">BREAKING NEWS</div>
+            <div class="ticker-content">
+                <div class="ticker-items">
+                    <div class="ticker-item">⚽ Liverpool secure last-minute victory against Manchester City with dramatic 90th minute goal</div>
+                    <div class="ticker-item">📰 Real Madrid completes transfer signing - Official announcement expected within hours</div>
+                    <div class="ticker-item">�� Bayern Munich advances to Champions League semi-finals with emphatic performance</div>
+                    <div class="ticker-item">💰 Transfer window records: Latest big-money signings across European leagues</div>
+                    <div class="ticker-item">⚽ Liverpool secure last-minute victory against Manchester City with dramatic 90th minute goal</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-bar" id="searchBar">
+            <div class="container">
+                <input type="text" class="search-input" placeholder="Search news, teams, players, transfers...">
+                <button class="search-btn">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Featured Story -->
+            <section class="featured-story">
+                <article class="featured-article">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1200&h=600&fit=crop" alt="Featured football story">
+                        <div class="featured-overlay">
+                            <span class="badge badge-featured">FEATURED</span>
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <div class="article-meta">
+                            <span class="league-tag premier-league">Premier League</span>
+                            <span class="published-time">2 hours ago</span>
+                        </div>
+                        <h1 class="featured-title">Liverpool's Stunning Comeback Stuns Manchester City in Title Race Thriller</h1>
+                        <p class="featured-excerpt">In a breathtaking encounter at Anfield, Liverpool's relentless pressure and tactical brilliance overcame Manchester City's defensive prowess, marking a crucial turning point in the Premier League title race. The victory has sent shockwaves through European football.</p>
+                        <div class="featured-footer">
+                            <span class="source">Source: Sky Sports News</span>
+                            <a href="#" class="read-more-btn">Read Full Story →</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Latest News Section -->
+            <section class="latest-news-section">
+                <div class="section-header">
+                    <h2>Latest News</h2>
+                    <a href="#" class="view-all-link">View All →</a>
+                </div>
+
+                <div class="news-grid">
+                    <!-- News Card 1 -->
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="https://images.unsplash.com/photo-1517466895681-c7fccb5aae4b?w=400&h=250&fit=crop" alt="Real Madrid transfer news">
+                            <span class="badge badge-transfer">TRANSFER</span>
+                        </div>
+                        <div class="news-content">
+                            <div class="article-meta">
+                                <span class="league-tag la-liga">La Liga</span>
+                                <span class="published-time">3 hours ago</span>
+                            </div>
+                            <h3>Real Madrid Set to Complete Marquee Signing - Contract Details Revealed</h3>
+                            <p>Los Blancos are preparing a formal announcement for their headline summer acquisition. Reports suggest a five-year deal with significant wages.</p>
+                            <div class="card-footer">
+                                <span class="source">Marca</span>
+                                <a href="#" class="card-link">Read →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- News Card 2 -->
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="https://images.unsplash.com/photo-1521575107034-e3fb11b6a5f0?w=400&h=250&fit=crop" alt="Bayern Munich Champions League">
+                            <span class="badge badge-breaking">BREAKING</span>
+                        </div>
+                        <div class="news-content">
+                            <div class="article-meta">
+                                <span class="league-tag bundesliga">Bundesliga</span>
+                                <span class="published-time">4 hours ago</span>
+                            </div>
+                            <h3>Bayern Munich Secures Champions League Semi-Final Spot with Clinical Victory</h3>
+                            <p>Bayern produced a masterclass performance against PSG, advancing to the semi-finals with a commanding 3-1 aggregate scoreline.</p>
+                            <div class="card-footer">
+                                <span class="source">Sky Deutschland</span>
+                                <a href="#" class="card-link">Read →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- News Card 3 -->
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=400&h=250&fit=crop" alt="AC Milan Serie A">
+                            <span class="badge badge-breaking">LATEST</span>
+                        </div>
+                        <div class="news-content">
+                            <div class="article-meta">
+                                <span class="league-tag serie-a">Serie A</span>
+                                <span class="published-time">5 hours ago</span>
+                            </div>
+                            <h3>AC Milan's Injury Crisis Deepens as Key Defender Ruled Out for Season</h3>
+                            <p>The Rossoneri face mounting defensive concerns after scans confirm serious injury. Manager confirms recruitment plans for January window.</p>
+                            <div class="card-footer">
+                                <span class="source">Corriere della Sera</span>
+                                <a href="#" class="card-link">Read →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- News Card 4 -->
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="https://images.unsplash.com/photo-1517466895681-c7fccb5aae4b?w=400&h=250&fit=crop" alt="PSG Ligue 1">
+                            <span class="badge badge-transfer">TRANSFER</span>
+                        </div>
+                        <div class="news-content">
+                            <div class="article-meta">
+                                <span class="league-tag ligue-1">Ligue 1</span>
+                                <span class="published-time">6 hours ago</span>
+                            </div>
+                            <h3>Paris Saint-Germain Linked With Shock Move for Arsenal Midfielder</h3>
+                            <p>French club's sporting director has held preliminary talks. Arsenal denies player will be sold, but financial pressure could force discussion.</p>
+                            <div class="card-footer">
+                                <span class="source">L'Équipe</span>
+                                <a href="#" class="card-link">Read →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- News Card 5 -->
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="https://images.unsplash.com/photo-1540747913ee00df63fe2e91147f51e41831623550?w=400&h=250&fit=crop" alt="Champions League">
+                            <span class="badge badge-breaking">BREAKING</span>
+                        </div>
+                        <div class="news-content">
+                            <div class="article-meta">
+                                <span class="league-tag champions-league">Champions League</span>
+                                <span class="published-time">7 hours ago</span>
+                            </div>
+                            <h3>Champions League Semi-Final Draw Confirmed - Blockbuster Matchups Announced</h3>
+                            <p>The draw has delivered exciting encounters. Real Madrid faces Inter Milan, while Manchester City takes on Bayern Munich.</p>
+                            <div class="card-footer">
+                                <span class="source">UEFA.com</span>
+                                <a href="#" class="card-link">Read →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- News Card 6 -->
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="https://images.unsplash.com/photo-1489944908f24632ffd28a42c9a32a3a95d06d84?w=400&h=250&fit=crop" alt="Transfer market">
+                            <span class="badge badge-transfer">TRANSFER</span>
+                        </div>
+                        <div class="news-content">
+                            <div class="article-meta">
+                                <span class="league-tag premier-league">Premier League</span>
+                                <span class="published-time">8 hours ago</span>
+                            </div>
+                            <h3>Manchester United's Summer Spending Plans Revealed - £150M Budget Earmarked</h3>
+                            <p>New management has identified priority positions. Defensive reinforcement and attacking midfield are key targets for the upcoming transfer window.</p>
+                            <div class="card-footer">
+                                <span class="source">The Athletic</span>
+                                <a href="#" class="card-link">Read →</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Transfer Centre Section -->
+            <section class="transfer-centre">
+                <div class="section-header">
+                    <h2>Transfer Centre</h2>
+                    <a href="#" class="view-all-link">All Transfers →</a>
+                </div>
+
+                <div class="transfer-grid">
+                    <!-- Transfer Rumour 1 -->
+                    <div class="transfer-card">
+                        <div class="transfer-type rumour">RUMOUR</div>
+                        <div class="transfer-player">
+                            <div class="player-name">Kylian Mbappé</div>
+                            <div class="player-info">
+                                <span class="player-club">Paris Saint-Germain</span>
+                                <span class="player-age">25 • France</span>
+                            </div>
+                        </div>
+                        <div class="transfer-details">
+                            <span class="transfer-fee">€200M+</span>
+                            <span class="transfer-target">Real Madrid / Manchester City</span>
+                        </div>
+                        <p class="transfer-news">Multiple European giants are tracking the French star. PSG faces mounting pressure to sell amid financial fair play concerns.</p>
+                        <span class="transfer-source">Source: ESPN</span>
+                    </div>
+
+                    <!-- Transfer Rumour 2 -->
+                    <div class="transfer-card">
+                        <div class="transfer-type confirmed">CONFIRMED</div>
+                        <div class="transfer-player">
+                            <div class="player-name">Erling Haaland</div>
+                            <div class="player-info">
+                                <span class="player-club">Borussia Dortmund</span>
+                                <span class="player-age">22 • Norway</span>
+                            </div>
+                        </div>
+                        <div class="transfer-details">
+                            <span class="transfer-fee">€60M</span>
+                            <span class="transfer-target">Manchester City</span>
+                        </div>
+                        <p class="transfer-news">Manchester City has officially secured the Norwegian striker on a five-year contract following activation of his release clause.</p>
+                        <span class="transfer-source">Source: Sky Sports</span>
+                    </div>
+
+                    <!-- Transfer Rumour 3 -->
+                    <div class="transfer-card">
+                        <div class="transfer-type rumour">RUMOUR</div>
+                        <div class="transfer-player">
+                            <div class="player-name">Jude Bellingham</div>
+                            <div class="player-info">
+                                <span class="player-club">Borussia Dortmund</span>
+                                <span class="player-age">19 • England</span>
+                            </div>
+                        </div>
+                        <div class="transfer-details">
+                            <span class="transfer-fee">€120M+</span>
+                            <span class="transfer-target">Real Madrid / Liverpool</span>
+                        </div>
+                        <p class="transfer-news">The young English midfielder is one of Europe's most sought-after talents. Multiple clubs preparing summer bids.</p>
+                        <span class="transfer-source">Source: Fabrizio Romano</span>
+                    </div>
+
+                    <!-- Transfer Rumour 4 -->
+                    <div class="transfer-card">
+                        <div class="transfer-type rumour">RUMOUR</div>
+                        <div class="transfer-player">
+                            <div class="player-name">Harry Kane</div>
+                            <div class="player-info">
+                                <span class="player-club">Tottenham Hotspur</span>
+                                <span class="player-age">30 • England</span>
+                            </div>
+                        </div>
+                        <div class="transfer-details">
+                            <span class="transfer-fee">€150M</span>
+                            <span class="transfer-target">Bayern Munich</span>
+                        </div>
+                        <p class="transfer-news">Bayern Munich intensifies pursuit of the English striker. Tottenham willing to negotiate, opening door for summer exit.</p>
+                        <span class="transfer-source">Source: Bild</span>
+                    </div>
+
+                    <!-- Transfer Rumour 5 -->
+                    <div class="transfer-card">
+                        <div class="transfer-type confirmed">CONFIRMED</div>
+                        <div class="transfer-player">
+                            <div class="player-name">Cristiano Ronaldo</div>
+                            <div class="player-info">
+                                <span class="player-club">Manchester United</span>
+                                <span class="player-age">38 • Portugal</span>
+                            </div>
+                        </div>
+                        <div class="transfer-details">
+                            <span class="transfer-fee">Free Transfer</span>
+                            <span class="transfer-target">Al-Nassr (Saudi Arabia)</span>
+                        </div>
+                        <p class="transfer-news">The Portuguese legend has officially left Manchester United after mutual agreement. Moves to Saudi club on lucrative two-year deal.</p>
+                        <span class="transfer-source">Source: Official Announcement</span>
+                    </div>
+
+                    <!-- Transfer Rumour 6 -->
+                    <div class="transfer-card">
+                        <div class="transfer-type rumour">RUMOUR</div>
+                        <div class="transfer-player">
+                            <div class="player-name">Phil Foden</div>
+                            <div class="player-info">
+                                <span class="player-club">Manchester City</span>
+                                <span class="player-age">23 • England</span>
+                            </div>
+                        </div>
+                        <div class="transfer-details">
+                            <span class="transfer-fee">€180M</span>
+                            <span class="transfer-target">Barcelona</span>
+                        </div>
+                        <p class="transfer-news">Barcelona eyes English winger as part of summer reconstruction. Manchester City adamant player is not for sale at any price.</p>
+                        <span class="transfer-source">Source: Mundo Deportivo</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Transfer Activity Chart -->
+            <section class="chart-section">
+                <div class="section-header">
+                    <h2>Transfer Market Activity by League</h2>
+                </div>
+                <div class="chart-container">
+                    <canvas id="transferChart"></canvas>
+                </div>
+                <p class="chart-description">Data shows total transfer spending (in millions €) for summer window 2024 across Europe's top five leagues.</p>
+            </section>
+
+            <!-- Live Scores Section -->
+            <section class="live-scores-section">
+                <div class="section-header">
+                    <h2>Live Scores Today</h2>
+                    <a href="#" class="view-all-link">All Matches →</a>
+                </div>
+
+                <div class="live-scores-container">
+                    <!-- Live Score 1 -->
+                    <div class="live-score-card">
+                        <div class="match-league">Premier League</div>
+                        <div class="match-time-status live">LIVE 45+3'</div>
+                        <div class="match-score">
+                            <div class="team home">
+                                <div class="team-logo">🔴</div>
+                                <div class="team-name">Liverpool</div>
+                                <div class="team-score">2</div>
+                            </div>
+                            <div class="match-divider">vs</div>
+                            <div class="team away">
+                                <div class="team-logo">🔵</div>
+                                <div class="team-name">Man City</div>
+                                <div class="team-score">1</div>
+                            </div>
+                        </div>
+                        <div class="match-stats">
+                            <span>Shots: 12-8</span>
+                            <span>Possession: 58%-42%</span>
+                        </div>
+                    </div>
+
+                    <!-- Live Score 2 -->
+                    <div class="live-score-card">
+                        <div class="match-league">La Liga</div>
+                        <div class="match-time-status live">LIVE 72'</div>
+                        <div class="match-score">
+                            <div class="team home">
+                                <div class="team-logo">👑</div>
+                                <div class="team-name">Real Madrid</div>
+                                <div class="team-score">3</div>
+                            </div>
+                            <div class="match-divider">vs</div>
+                            <div class="team away">
+                                <div class="team-logo">🔵</div>
+                                <div class="team-name">Barcelona</div>
+                                <div class="team-score">2</div>
+                            </div>
+                        </div>
+                        <div class="match-stats">
+                            <span>Shots: 14-9</span>
+                            <span>Possession: 55%-45%</span>
+                        </div>
+                    </div>
+
+                    <!-- Live Score 3 -->
+                    <div class="live-score-card">
+                        <div class="match-league">Serie A</div>
+                        <div class="match-time-status completed">FT</div>
+                        <div class="match-score">
+                            <div class="team home">
+                                <div class="team-logo">⚫</div>
+                                <div class="team-name">Juventus</div>
+                                <div class="team-score">2</div>
+                            </div>
+                            <div class="match-divider">vs</div>
+                            <div class="team away">
+                                <div class="team-logo">🔴</div>
+                                <div class="team-name">AC Milan</div>
+                                <div class="team-score">2</div>
+                            </div>
+                        </div>
+                        <div class="match-stats">
+                            <span>Shots: 11-10</span>
+                            <span>Possession: 52%-48%</span>
+                        </div>
+                    </div>
+
+                    <!-- Live Score 4 -->
+                    <div class="live-score-card">
+                        <div class="match-league">Bundesliga</div>
+                        <div class="match-time-status upcoming">20:30</div>
+                        <div class="match-score">
+                            <div class="team home">
+                                <div class="team-logo">🔴</div>
+                                <div class="team-name">Bayern</div>
+                                <div class="team-score">-</div>
+                            </div>
+                            <div class="match-divider">vs</div>
+                            <div class="team away">
+                                <div class="team-logo">🟡</div>
+                                <div class="team-name">Dortmund</div>
+                                <div class="team-score">-</div>
+                            </div>
+                        </div>
+                        <div class="match-stats">
+                            <span>Upcoming</span>
+                            <span>Der Klassiker</span>
+                        </div>
+                    </div>
+
+                    <!-- Live Score 5 -->
+                    <div class="live-score-card">
+                        <div class="match-league">Ligue 1</div>
+                        <div class="match-time-status completed">FT</div>
+                        <div class="match-score">
+                            <div class="team home">
+                                <div class="team-logo">🔵</div>
+                                <div class="team-name">PSG</div>
+                                <div class="team-score">4</div>
+                            </div>
+                            <div class="match-divider">vs</div>
+                            <div class="team away">
+                                <div class="team-logo">⚪</div>
+                                <div class="team-name">Marseille</div>
+                                <div class="team-score">1</div>
+                            </div>
+                        </div>
+                        <div class="match-stats">
+                            <span>Shots: 18-7</span>
+                            <span>Possession: 68%-32%</span>
+                        </div>
+                    </div>
+
+                    <!-- Live Score 6 -->
+                    <div class="live-score-card">
+                        <div class="match-league">Champions League</div>
+                        <div class="match-time-status live">LIVE 35'</div>
+                        <div class="match-score">
+                            <div class="team home">
+                                <div class="team-logo">🇮🇹</div>
+                                <div class="team-name">Inter Milan</div>
+                                <div class="team-score">1</div>
+                            </div>
+                            <div class="match-divider">vs</div>
+                            <div class="team away">
+                                <div class="team-logo">👑</div>
+                                <div class="team-name">Real Madrid</div>
+                                <div class="team-score">0</div>
+                            </div>
+                        </div>
+                        <div class="match-stats">
+                            <span>Shots: 7-9</span>
+                            <span>Possession: 45%-55%</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Upcoming Fixtures Section -->
+            <section class="upcoming-fixtures">
+                <div class="section-header">
+                    <h2>Upcoming Fixtures</h2>
+                    <a href="#" class="view-all-link">Full Fixture List →</a>
+                </div>
+
+                <div class="fixtures-grid">
+                    <!-- Fixture Card 1 -->
+                    <div class="fixture-card">
+                        <div class="fixture-date">Tomorrow</div>
+                        <div class="fixture-league">Premier League</div>
+                        <div class="fixture-match">
+                            <div class="fixture-team">Chelsea</div>
+                            <div class="fixture-time">15:00</div>
+                            <div class="fixture-team">Arsenal</div>
+                        </div>
+                        <a href="#" class="fixture-link">View Details</a>
+                    </div>
+
+                    <!-- Fixture Card 2 -->
+                    <div class="fixture-card">
+                        <div class="fixture-date">Tomorrow</div>
+                        <div class="fixture-league">La Liga</div>
+                        <div class="fixture-match">
+                            <div class="fixture-team">Atlético Madrid</div>
+                            <div class="fixture-time">21:00</div>
+                            <div class="fixture-team">Sevilla</div>
+                        </div>
+                        <a href="#" class="fixture-link">View Details</a>
+                    </div>
+
+                    <!-- Fixture Card 3 -->
+                    <div class="fixture-card">
+                        <div class="fixture-date">In 2 Days</div>
+                        <div class="fixture-league">Serie A</div>
+                        <div class="fixture-match">
+                            <div class="fixture-team">Napoli</div>
+                            <div class="fixture-time">20:45</div>
+                            <div class="fixture-team">Lazio</div>
+                        </div>
+                        <a href="#" class="fixture-link">View Details</a>
+                    </div>
+
+                    <!-- Fixture Card 4 -->
+                    <div class="fixture-card">
+                        <div class="fixture-date">In 2 Days</div>
+                        <div class="fixture-league">Bundesliga</div>
+                        <div class="fixture-match">
+                            <div class="fixture-team">Bayern Munich</div>
+                            <div class="fixture-time">18:30</div>
+                            <div class="fixture-team">Borussia Dortmund</div>
+                        </div>
+                        <a href="#" class="fixture-link">View Details</a>
+                    </div>
+
+                    <!-- Fixture Card 5 -->
+                    <div class="fixture-card">
+                        <div class="fixture-date">In 3 Days</div>
+                        <div class="fixture-league">Ligue 1</div>
+                        <div class="fixture-match">
+                            <div class="fixture-team">Paris Saint-Germain</div>
+                            <div class="fixture-time">20:00</div>
+                            <div class="fixture-team">Lyon</div>
+                        </div>
+                        <a href="#" class="fixture-link">View Details</a>
+                    </div>
+
+                    <!-- Fixture Card 6 -->
+                    <div class="fixture-card">
+                        <div class="fixture-date">In 4 Days</div>
+                        <div class="fixture-league">Champions League</div>
+                        <div class="fixture-match">
+                            <div class="fixture-team">Manchester City</div>
+                            <div class="fixture-time">20:00</div>
+                            <div class="fixture-team">Bayern Munich</div>
+                        </div>
+                        <a href="#" class="fixture-link">View Details</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- League Standings Section -->
+            <section class="standings-section">
+                <div class="section-header">
+                    <h2>League Standings</h2>
+                </div>
+
+                <div class="standings-tabs">
+                    <button class="standings-tab active" data-league="premier-league">
+                        <span class="tab-flag">🇬🇧</span>
+                        Premier League
+                    </button>
+                    <button class="standings-tab" data-league="la-liga">
+                        <span class="tab-flag">🇪🇸</span>
+                        La Liga
+                    </button>
+                    <button class="standings-tab" data-league="serie-a">
+                        <span class="tab-flag">🇮🇹</span>
+                        Serie A
+                    </button>
+                    <button class="standings-tab" data-league="bundesliga">
+                        <span class="tab-flag">🇩🇪</span>
+                        Bundesliga
+                    </button>
+                    <button class="standings-tab" data-league="ligue-1">
+                        <span class="tab-flag">🇫🇷</span>
+                        Ligue 1
+                    </button>
+                </div>
+
+                <div class="standings-content">
+                    <!-- Premier League Table -->
+                    <div class="standings-table active" data-league="premier-league">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Pos</th>
+                                    <th>Team</th>
+                                    <th>P</th>
+                                    <th>W</th>
+                                    <th>D</th>
+                                    <th>L</th>
+                                    <th>GF</th>
+                                    <th>GA</th>
+                                    <th>GD</th>
+                                    <th>Pts</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="highlight">
+                                    <td>1</td>
+                                    <td><strong>Manchester City</strong></td>
+                                    <td>32</td>
+                                    <td>24</td>
+                                    <td>3</td>
+                                    <td>5</td>
+                                    <td>82</td>
+                                    <td>28</td>
+                                    <td>+54</td>
+                                    <td><strong>75</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Arsenal</td>
+                                    <td>32</td>
+                                    <td>23</td>
+                                    <td>3</td>
+                                    <td>6</td>
+                                    <td>79</td>
+                                    <td>35</td>
+                                    <td>+44</td>
+                                    <td>72</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Liverpool</td>
+                                    <td>32</td>
+                                    <td>22</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                    <td>74</td>
+                                    <td>30</td>
+                                    <td>+44</td>
+                                    <td>70</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Chelsea</td>
+                                    <td>32</td>
+                                    <td>18</td>
+                                    <td>5</td>
+                                    <td>9</td>
+                                    <td>58</td>
+                                    <td>42</td>
+                                    <td>+16</td>
+                                    <td>59</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Tottenham</td>
+                                    <td>32</td>
+                                    <td>17</td>
+                                    <td>4</td>
+                                    <td>11</td>
+                                    <td>55</td>
+                                    <td>46</td>
+                                    <td>+9</td>
+                                    <td>55</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Manchester United</td>
+                                    <td>32</td>
+                                    <td>15</td>
+                                    <td>4</td>
+                                    <td>13</td>
+                                    <td>52</td>
+                                    <td>48</td>
+                                    <td>+4</td>
+                                    <td>49</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- La Liga Table -->
+                    <div class="standings-table" data-league="la-liga">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Pos</th>
+                                    <th>Team</th>
+                                    <th>P</th>
+                                    <th>W</th>
+                                    <th>D</th>
+                                    <th>L</th>
+                                    <th>GF</th>
+                                    <th>GA</th>
+                                    <th>GD</th>
+                                    <th>Pts</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="highlight">
+                                    <td>1</td>
+                                    <td><strong>Real Madrid</strong></td>
+                                    <td>30</td>
+                                    <td>23</td>
+                                    <td>4</td>
+                                    <td>3</td>
+                                    <td>72</td>
+                                    <td>24</td>
+                                    <td>+48</td>
+                                    <td><strong>73</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Barcelona</td>
+                                    <td>30</td>
+                                    <td>22</td>
+                                    <td>3</td>
+                                    <td>5</td>
+                                    <td>68</td>
+                                    <td>28</td>
+                                    <td>+40</td>
+                                    <td>69</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Girona</td>
+                                    <td>30</td>
+                                    <td>19</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>62</td>
+                                    <td>38</td>
+                                    <td>+24</td>
+                                    <td>62</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Atlético Madrid</td>
+                                    <td>30</td>
+                                    <td>17</td>
+                                    <td>8</td>
+                                    <td>5</td>
+                                    <td>54</td>
+                                    <td>32</td>
+                                    <td>+22</td>
+                                    <td>59</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Real Sociedad</td>
+                                    <td>30</td>
+                                    <td>16</td>
+                                    <td>5</td>
+                                    <td>9</td>
+                                    <td>50</td>
+                                    <td>38</td>
+                                    <td>+12</td>
+                                    <td>53</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Villarreal</td>
+                                    <td>30</td>
+                                    <td>14</td>
+                                    <td>6</td>
+                                    <td>10</td>
+                                    <td>48</td>
+                                    <td>42</td>
+                                    <td>+6</td>
+                                    <td>48</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Serie A Table -->
+                    <div class="standings-table" data-league="serie-a">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Pos</th>
+                                    <th>Team</th>
+                                    <th>P</th>
+                                    <th>W</th>
+                                    <th>D</th>
+                                    <th>L</th>
+                                    <th>GF</th>
+                                    <th>GA</th>
+                                    <th>GD</th>
+                                    <th>Pts</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="highlight">
+                                    <td>1</td>
+                                    <td><strong>Napoli</strong></td>
+                                    <td>30</td>
+                                    <td>23</td>
+                                    <td>2</td>
+                                    <td>5</td>
+                                    <td>70</td>
+                                    <td>26</td>
+                                    <td>+44</td>
+                                    <td><strong>71</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Juventus</td>
+                                    <td>30</td>
+                                    <td>21</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>64</td>
+                                    <td>28</td>
+                                    <td>+36</td>
+                                    <td>67</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Inter Milan</td>
+                                    <td>30</td>
+                                    <td>19</td>
+                                    <td>6</td>
+                                    <td>5</td>
+                                    <td>58</td>
+                                    <td>30</td>
+                                    <td>+28</td>
+                                    <td>63</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>AC Milan</td>
+                                    <td>30</td>
+                                    <td>17</td>
+                                    <td>5</td>
+                                    <td>8</td>
+                                    <td>54</td>
+                                    <td>36</td>
+                                    <td>+18</td>
+                                    <td>56</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Lazio</td>
+                                    <td>30</td>
+                                    <td>15</td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                    <td>48</td>
+                                    <td>38</td>
+                                    <td>+10</td>
+                                    <td>52</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Roma</td>
+                                    <td>30</td>
+                                    <td>14</td>
+                                    <td>6</td>
+                                    <td>10</td>
+                                    <td>46</td>
+                                    <td>40</td>
+                                    <td>+6</td>
+                                    <td>48</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Bundesliga Table -->
+                    <div class="standings-table" data-league="bundesliga">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Pos</th>
+                                    <th>Team</th>
+                                    <th>P</th>
+                                    <th>W</th>
+                                    <th>D</th>
+                                    <th>L</th>
+                                    <th>GF</th>
+                                    <th>GA</th>
+                                    <th>GD</th>
+                                    <th>Pts</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="highlight">
+                                    <td>1</td>
+                                    <td><strong>Bayern Munich</strong></td>
+                                    <td>30</td>
+                                    <td>24</td>
+                                    <td>3</td>
+                                    <td>3</td>
+                                    <td>76</td>
+                                    <td>22</td>
+                                    <td>+54</td>
+                                    <td><strong>75</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Borussia Dortmund</td>
+                                    <td>30</td>
+                                    <td>20</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                    <td>68</td>
+                                    <td>32</td>
+                                    <td>+36</td>
+                                    <td>64</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Bayer Leverkusen</td>
+                                    <td>30</td>
+                                    <td>19</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>62</td>
+                                    <td>36</td>
+                                    <td>+26</td>
+                                    <td>62</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>RB Leipzig</td>
+                                    <td>30</td>
+                                    <td>18</td>
+                                    <td>4</td>
+                                    <td>8</td>
+                                    <td>56</td>
+                                    <td>38</td>
+                                    <td>+18</td>
+                                    <td>58</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Werder Bremen</td>
+                                    <td>30</td>
+                                    <td>15</td>
+                                    <td>4</td>
+                                    <td>11</td>
+                                    <td>50</td>
+                                    <td>42</td>
+                                    <td>+8</td>
+                                    <td>49</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Schalke 04</td>
+                                    <td>30</td>
+                                    <td>12</td>
+                                    <td>6</td>
+                                    <td>12</td>
+                                    <td>44</td>
+                                    <td>48</td>
+                                    <td>-4</td>
+                                    <td>42</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Ligue 1 Table -->
+                    <div class="standings-table" data-league="ligue-1">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Pos</th>
+                                    <th>Team</th>
+                                    <th>P</th>
+                                    <th>W</th>
+                                    <th>D</th>
+                                    <th>L</th>
+                                    <th>GF</th>
+                                    <th>GA</th>
+                                    <th>GD</th>
+                                    <th>Pts</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="highlight">
+                                    <td>1</td>
+                                    <td><strong>Paris Saint-Germain</strong></td>
+                                    <td>28</td>
+                                    <td>22</td>
+                                    <td>3</td>
+                                    <td>3</td>
+                                    <td>74</td>
+                                    <td>22</td>
+                                    <td>+52</td>
+                                    <td><strong>69</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Marseille</td>
+                                    <td>28</td>
+                                    <td>18</td>
+                                    <td>5</td>
+                                    <td>5</td>
+                                    <td>58</td>
+                                    <td>32</td>
+                                    <td>+26</td>
+                                    <td>59</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Lyon</td>
+                                    <td>28</td>
+                                    <td>16</td>
+                                    <td>6</td>
+                                    <td>6</td>
+                                    <td>52</td>
+                                    <td>34</td>
+                                    <td>+18</td>
+                                    <td>54</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Nice</td>
+                                    <td>28</td>
+                                    <td>14</td>
+                                    <td>7</td>
+                                    <td>7</td>
+                                    <td>46</td>
+                                    <td>36</td>
+                                    <td>+10</td>
+                                    <td>49</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Lens</td>
+                                    <td>28</td>
+                                    <td>13</td>
+                                    <td>6</td>
+                                    <td>9</td>
+                                    <td>42</td>
+                                    <td>38</td>
+                                    <td>+4</td>
+                                    <td>45</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Monaco</td>
+                                    <td>28</td>
+                                    <td>12</td>
+                                    <td>5</td>
+                                    <td>11</td>
+                                    <td>40</td>
+                                    <td>40</td>
+                                    <td>0</td>
+                                    <td>41</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Top Scorers Section -->
+            <section class="top-scorers">
+                <div class="section-header">
+                    <h2>Top Scorers Across Europe</h2>
+                    <a href="#" class="view-all-link">All Scorers →</a>
+                </div>
+
+                <div class="scorers-grid">
+                    <!-- Scorer 1 -->
+                    <div class="scorer-card">
+                        <div class="scorer-rank">1</div>
+                        <div class="scorer-info">
+                            <div class="scorer-name">Cristiano Ronaldo</div>
+                            <div class="scorer-club">Al-Nassr</div>
+                        </div>
+                        <div class="scorer-stats">
+                            <div class="scorer-goals">35</div>
+                            <div class="scorer-label">Goals</div>
+                        </div>
+                    </div>
+
+                    <!-- Scorer 2 -->
+                    <div class="scorer-card">
+                        <div class="scorer-rank">2</div>
+                        <div class="scorer-info">
+                            <div class="scorer-name">Erling Haaland</div>
+                            <div class="scorer-club">Manchester City</div>
+                        </div>
+                        <div class="scorer-stats">
+                            <div class="scorer-goals">32</div>
+                            <div class="scorer-label">Goals</div>
+                        </div>
+                    </div>
+
+                    <!-- Scorer 3 -->
+                    <div class="scorer-card">
+                        <div class="scorer-rank">3</div>
+                        <div class="scorer-info">
+                            <div class="scorer-name">Harry Kane</div>
+                            <div class="scorer-club">Bayern Munich</div>
+                        </div>
+                        <div class="scorer-stats">
+                            <div class="scorer-goals">31</div>
+                            <div class="scorer-label">Goals</div>
+                        </div>
+                    </div>
+
+                    <!-- Scorer 4 -->
+                    <div class="scorer-card">
+                        <div class="scorer-rank">4</div>
+                        <div class="scorer-info">
+                            <div class="scorer-name">Kylian Mbappé</div>
+                            <div class="scorer-club">PSG</div>
+                        </div>
+                        <div class="scorer-stats">
+                            <div class="scorer-goals">29</div>
+                            <div class="scorer-label">Goals</div>
+                        </div>
+                    </div>
+
+                    <!-- Scorer 5 -->
+                    <div class="scorer-card">
+                        <div class="scorer-rank">5</div>
+                        <div class="scorer-info">
+                            <div class="scorer-name">Vinícius Jr</div>
+                            <div class="scorer-club">Real Madrid</div>
+                        </div>
+                        <div class="scorer-stats">
+                            <div class="scorer-goals">28</div>
+                            <div class="scorer-label">Goals</div>
+                        </div>
+                    </div>
+
+                    <!-- Scorer 6 -->
+                    <div class="scorer-card">
+                        <div class="scorer-rank">6</div>
+                        <div class="scorer-info">
+                            <div class="scorer-name">Karim Benzema</div>
+                            <div class="scorer-club">Al-Ittihad</div>
+                        </div>
+                        <div class="scorer-stats">
+                            <div class="scorer-goals">27</div>
+                            <div class="scorer-label">Goals</div>
+                        </div>
+                    </div>
+
+                    <!-- Scorer 7 -->
+                    <div class="scorer-card">
+                        <div class="scorer-rank">7</div>
+                        <div class="scorer-info">
+                            <div class="scorer-name">Sergio Lewandowski</div>
+                            <div class="scorer-club">Barcelona</div>
+                        </div>
+                        <div class="scorer-stats">
+                            <div class="scorer-goals">26</div>
+                            <div class="scorer-label">Goals</div>
+                        </div>
+                    </div>
+
+                    <!-- Scorer 8 -->
+                    <div class="scorer-card">
+                        <div class="scorer-rank">8</div>
+                        <div class="scorer-info">
+                            <div class="scorer-name">Phil Foden</div>
+                            <div class="scorer-club">Manchester City</div>
+                        </div>
+                        <div class="scorer-stats">
+                            <div class="scorer-goals">24</div>
+                            <div class="scorer-label">Goals</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Newsletter Section -->
+            <section class="newsletter-section">
+                <div class="newsletter-content">
+                    <div class="newsletter-text">
+                        <h2>Stay Updated With EFN</h2>
+                        <p>Get the latest European football news, transfer rumors, match highlights, and exclusive analysis delivered to your inbox every day.</p>
+                    </div>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About EFN</h3>
+                    <p>EFN (European Football News) is your premium source for breaking news, analysis, and coverage of Europe's top football leagues and competitions.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Leagues</h3>
+                    <ul>
+                        <li><a href="#">Premier League</a></li>
+                        <li><a href="#">La Liga</a></li>
+                        <li><a href="#">Serie A</a></li>
+                        <li><a href="#">Bundesliga</a></li>
+                        <li><a href="#">Ligue 1</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Competitions</h3>
+                    <ul>
+                        <li><a href="#">Champions League</a></li>
+                        <li><a href="#">Europa League</a></li>
+                        <li><a href="#">Transfers</a></li>
+                        <li><a href="#">Standings</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Advertise With Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 European Football News (EFN). All rights reserved. | Data sources attributed to their respective publishers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
